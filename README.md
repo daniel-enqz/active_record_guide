@@ -2,6 +2,7 @@
 - return an ActiveRecord::Relation
   - chainable instructions
   - always rely in database, not in ruby.
+  - Will only be sended when its needed. (.to_sql)
 
 > ### Common retreval ways:
 - find
