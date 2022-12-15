@@ -20,5 +20,6 @@
 - select and pluck (Sometimes we dont need all the model attributes) [Project.all.pluck(:name)]
 - If you want to mantain the active record relation go for select.
 
-> ### Grouping
+> ### Gmore filtering
 - common way is doing Project.all.group(:description).count # => {nil: 4, "test": 2}
+- having("count(*)")
